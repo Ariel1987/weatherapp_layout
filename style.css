@@ -23,6 +23,14 @@ body {
     display: none;
 }
 
+.current-place-date {
+    display: none;
+}
+
+.text-tomorrow {
+    display: none;
+}
+
 .main-icon {
     display: none;
 }
@@ -31,7 +39,11 @@ body {
     display: none;
 }
 
-.text-tomorrow {
+.weather-info-temperature-tablet {
+    display: none;
+}
+
+.weather-info-next-days-tablet {
     display: none;
 }
 
@@ -61,26 +73,34 @@ body {
     padding-right: 5%; 
 }
 
+.current-main-info-header {
+    background-color: rgba(51, 51, 51, 0.6);
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 5%;
+    padding-right: 5%; 
+}
+
 
 .weather-conditions {
     display: flex;
     justify-content: space-around;
-    padding-top: 25%;
+    padding-top: 15%;
     padding-bottom: 5%;
 }
 
 .weather-info {
     display: flex;
+}
+
+.weather-info:nth-child(2) {
+    display: none;
+}
+
+.icon-info {
+    display: flex;
     flex-direction: column;
-}
-
-.weather-info-icon {
-    position: fixed;
-}
-
-.weather-info-text {
-    padding-left: 95%;
-    padding-top: 20%;    
 }
 
 .footer-next-days {
@@ -99,9 +119,132 @@ body {
 /*
     tablet
 **/
-@media screen and(min-width: 1024px) {
+@media screen and (min-width: 1024px) {
+    
+    .text-tomorrow-header {
+        display: none;
+    }
+
+    .weather-info:nth-child(2) {
+        display: block;
+    }
+
+    .weather-full-info:last-child {
+        display: flex;    
+        padding-top: 5%;
+    }
+
+    .weather-full-info:first-child {
+        align-items: center;
+    }
+
+    .weather-full-info {
+        display: flex;
+    }
+
+    .weather-conditions {
+        padding-left: 5%;
+        padding-top: 0;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .weather-info {
+        flex-direction: column;
+    }
+
+    .icon-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 20%; 
+    }
+
+    .main-icon {
+        display: flex;
+        width: 25%;
+        height: 25%;
+    }
+    
+    .text-opinion {
+        display: block;
+    }
+
+    .main-class {
+        background-color: rgba(51, 51, 51, 0.6);
+        color: white; 
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    .current-main-info-header {
+        display: block;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0;
+        width: 100%;
+    }
+
+    .current-place-date {
+        display: flex;
+    }
+
+    .place-date-text {
+        position: relative;
+        padding-left: 5%;
+    }
+    
+
+    .current-place-date-main {
+        display: none;
+    }
+    
+    .current-main-info {
+        justify-content: right;
+        font-size: 100%;
+    }
+
+    .main-temperature-tomorrow {
+        font-size: 300%;
+    }
+
+    .main-temperature {
+        padding: 0;
+        font-size: 300%;
+    }
+
+    .weather-info-icon {
+        display: flex;
+        position: relative;
+    }
+
+    .weather-info-text {
+        padding-left: 0;
+    }
+
+    .weather-info-temperature-tablet {
+        display: block;
+    }
+    
+    .weather-info-temperature-mobile {
+        display: none;
+    }
+        
+    .divider-line {
+        border-left: 3px solid white;
+        transform: rotate(90deg);
+        width: 300%;
+    }
+
+    .footer-next-days {
+        display: flex;        
+    }
 
 }
+    
+
 
 /*
     Desktop

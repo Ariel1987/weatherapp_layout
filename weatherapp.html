@@ -9,7 +9,26 @@
   </head>
 
   <body>
+    
+    <header class="current-main-info-header">
 
+        <div class="current-time">
+            <h2>12:45</h2>
+        </div>          
+                
+        <div class="current-place-date">
+
+            <div class="place-date-text">
+                <h3 class="current-date">Domingo, 29 de abril de 2019</h3>
+                <h3 class="current-place">Volvogrado, Rússia</h3>
+            </div>
+
+            <h2 class="text-tomorrow-header">Amanhã</h2>
+
+        </div>
+               
+    </header>
+    
     <section class="sidebar">
 
         <div class="searchbox-mobile">  
@@ -77,61 +96,95 @@
     </section>
 
     <main class="main-class">
-
+        
         <section id="today" class="weather-full-info">
-            
-            <div class="current-time">
-                <h2>12:45</h2>
-            </div>          
-
-            <div class="current-main-info">
-                <img src="imagens/icones/cloud.png" class="main-icon"><span class="main-temperature">-8º</span>
-            </div>
-            
-            <div class="current-main-info">
-                <h4 class="current-date">Domingo, 29 de abril de 2019</h4>
-            </div>
-            
-            <div class="current-main-info">
-                <h4 class="current-place">Volvogrado, Rússia</h4>
-            </div>
-            
-            <div class="current-temperature">
-                <h2 class="text-opinion">Frio da porra, vento cortante, sem sol</h2>
-            </div>
-            
-            <div class="weather-conditions">
-                <div class="weather-info">
-                    <img src="imagens/icones/wind (1).png" class="weather-info-icon"><span class="weather-info-text">100 km/h</span>
+        
+            <div>                
+                <div class="current-main-info">
+                    <img src="imagens/icones/cloud.png" class="main-icon"><span class="main-temperature">-8º</span>
                 </div>
-                <div class="weather-info">
-                    <img src="imagens/icones/raindrop.png" class="weather-info-icon"><span class="weather-info-text">15 mm</span>
-                </div>
-                <img src="imagens/icones/current_temperature.png">
-            </div>
-        </section>
-
-        <section id="tomorrow" class="weather-full-info">
-
-            <div>
-                <h2 class="text-tomorrow">Amanhã</h2>
-            </div>
-                            
-            <div class="current-temperature">
-                <img src="/imagens/icones/cloud.png" class="main-icon"><span class="temperature">-8º</span>
-            </div>
-            <div>
-                <h2 class="text-opinion">Não saiam de suas casas!</h2>
-            </div>
                 
-            <div class="weather-conditions">
-                <img src="/imagens/icones/wind (1).png"><span class="wind">100 km/h</span>
-                <img src=""><span class="wind">-17º</span>
+                <div class="current-main-info">
+                    <h4 class="current-place-date-main">Domingo, 29 de abril de 2019</h4>
+                </div>
+                
+                <div class="current-main-info">
+                    <h4 class="current-place-date-main">Volvogrado, Rússia</h4>
+                </div>
+                
+                <div class="current-temperature">
+                    <h2 class="text-opinion">Frio da porra, vento cortante, sem sol</h2>
+                </div>
             </div>
-    
-            <div class="weather-conditions-rain">
-                <img src=""><span class="wind">15 mm</span>
-                <img src=""><span class="wind">-5º</span>
+        
+            <div class="weather-conditions">
+
+                <div class="weather-info">
+
+                    <div class="icon-info">
+                        <img src="imagens/icones/wind (1).png" class="weather-info-icon"><span class="weather-info-text">100 km/h</span>
+                    </div>
+                    <div class="icon-info">
+                        <img src="imagens/icones/raindrop.png" class="weather-info-icon"><span class="weather-info-text">15 mm</span>
+                    </div>
+                </div>
+
+                <div class="weather-info">
+                
+                    <div class="icon-info">
+                        <img src="imagens/icones/min.png" class="weather-info-temperature-tablet"><span class="weather-info-temperature-tablet">-17º</span>
+                    </div>
+                    <div class="icon-info">
+                        <img src="imagens/icones/max.png" class="weather-info-temperature-tablet"><span class="weather-info-temperature-tablet">-5º</span>
+                    </div>
+                </div>
+                
+                <div class="weather-info">
+                    <img src="imagens/icones/current_temperature.png" class="weather-info-temperature-mobile">
+                </div>
+            
+            </div>
+            
+        </section>
+        
+        <hr width="600" height="30">
+        
+        <section id="tomorrow" class="weather-full-info">
+            
+            <div>  
+                <h2>Amanhã</h2>              
+                <div class="current-main-info">
+                    <img src="imagens/icones/cloud.png" class="main-icon"><span class="main-temperature-tomorrow">-8º</span>
+                </div>
+                
+                <div>
+                    <h2 class="text-opinion">Frio da porra, vento cortante, sem sol</h2>
+                </div>
+            </div>
+            <div class="weather-conditions">
+            
+                <div class="weather-info">
+                
+                    <div class="icon-info">
+                        <img src="imagens/icones/wind (1).png" class="weather-info-icon"><span class="weather-info-text">100 km/h</span>
+                    </div>
+                    
+                    <div class="icon-info">
+                        <img src="imagens/icones/raindrop.png" class="weather-info-icon"><span class="weather-info-text">15 mm</span>
+                    </div>    
+                </div>
+
+                <div class="weather-info">
+                
+                    <div class="icon-info">
+                        <img src="imagens/icones/min.png" class="weather-info-temperature-tablet"><span class="weather-info-temperature-tablet">-17º</span>
+                    </div>
+                    
+                    <div class="icon-info">
+                        <img src="imagens/icones/max.png" class="weather-info-temperature-tablet"><span class="weather-info-temperature-tablet">-5º</span>
+                    </div>
+                </div>
+            
             </div>
         </section>
 
@@ -143,23 +196,74 @@
         <section class="footer-next-days">
         
             <div class="weather-info-next-days">
+                
                 <h2>Terça</h2>
                 <img src="imagens/icones/rain.png" class="footer-icon">
                 <img src="imagens/icones/min&max.png" class="footer-icon">
-            </div>
-            
-            <div class="weather-info-next-days">
-                    <h2>Quarta</h2>
-                    <img src="imagens/icones/rain.png" class="footer-icon">
-                    <img src="imagens/icones/min&max.png" class="footer-icon">
-            </div>
-            
-            <div class="weather-info-next-days">
-                    <h2>Quinta</h2>
-                    <img src="imagens/icones/rain.png" class="footer-icon">
-                    <img src="imagens/icones/min&max.png" class="footer-icon">
-            </div>
                 
+                <div class="weather-info-next-days-tablet">
+                  
+                    <img src="imagens/icones/raindrop (1).png" class="footer-icon"><span class="weather-info-text">15 mm</span>
+                    <img src="imagens/icones/wind (2).png" class="footer-icon"><span class="weather-info-text">100 km/h</span>
+
+                </div>
+            </div>            
+            <div class="weather-info-next-days">
+                
+                <h2>Quarta</h2>
+                <img src="imagens/icones/rain.png" class="footer-icon">
+                <img src="imagens/icones/min&max.png" class="footer-icon">
+                
+                <div class="weather-info-next-days-tablet">
+                    <img src="imagens/icones/raindrop (1).png" class="footer-icon"><span class="weather-info-text">15 mm</span>
+                    <img src="imagens/icones/wind (2).png" class="footer-icon"><span class="weather-info-text">100 km/h</span>
+                </div>
+            </div>
+            
+            <div class="weather-info-next-days">
+                
+                <h2>Quinta</h2>
+                <img src="imagens/icones/rain.png" class="footer-icon">
+                <img src="imagens/icones/min&max.png" class="footer-icon">
+                <div class="weather-info-next-days-tablet">
+                    <img src="imagens/icones/raindrop (1).png" class="footer-icon"><span class="weather-info-text">15 mm</span>
+                    <img src="imagens/icones/wind (2).png" class="footer-icon"><span class="weather-info-text">100 km/h</span>
+                </div>
+            </div>
+            
+            <div class="weather-info-next-days-tablet">
+                
+                <div class="weather-info-next-days">
+                
+                    <h2>Sexta</h2>
+                    <img src="imagens/icones/rain.png" class="footer-icon">
+                    <img src="imagens/icones/min&max.png" class="footer-icon">
+                    <img src="imagens/icones/raindrop (1).png" class="footer-icon"><span class="weather-info-text">15 mm</span>
+                    <img src="imagens/icones/wind (2).png" class="footer-icon"><span class="weather-info-text">100 km/h</span>
+            
+                </div>
+            
+                <div class="weather-info-next-days">
+                    
+                    <h2>Sábado</h2>
+                    <img src="imagens/icones/rain.png" class="footer-icon">
+                    <img src="imagens/icones/min&max.png" class="footer-icon">
+                    <img src="imagens/icones/raindrop (1).png" class="footer-icon"><span class="weather-info-text">15 mm</span>
+                    <img src="imagens/icones/wind (2).png" class="footer-icon"><span class="weather-info-text">100 km/h</span>
+                    
+                </div>
+                
+                <div class="weather-info-next-days">
+                    
+                    <h2>Domingo</h2>
+                    <img src="imagens/icones/rain.png" class="footer-icon">
+                    <img src="imagens/icones/min&max.png" class="footer-icon">
+                    <img src="imagens/icones/raindrop (1).png" class="footer-icon"><span class="weather-info-text">15 mm</span>
+                    <img src="imagens/icones/wind (2).png" class="footer-icon"><span class="weather-info-text">100 km/h</span>
+                
+                </div>
+            </div>
+            
         </section>
     
     </footer>
